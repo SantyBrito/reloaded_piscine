@@ -6,13 +6,13 @@
 /*   By: sbrito <sbrito@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 20:50:59 by sbrito            #+#    #+#             */
-/*   Updated: 2023/11/09 14:36:14 by sbrito           ###   ########.fr       */
+/*   Updated: 2023/11/09 19:22:52 by sbrito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_print_numbers(void)
+void	ft_print_numbers(void)
 {
-	write (1, "0123456789", 10);
+	write(1, "0123456789\n", 10);
 }

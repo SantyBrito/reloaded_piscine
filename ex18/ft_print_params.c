@@ -1,25 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_print_params.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sbrito <sbrito@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/08 19:56:00 by sbrito            #+#    #+#             */
-/*   Updated: 2023/11/09 19:21:13 by sbrito           ###   ########.fr       */
+/*   Created: 2023/11/09 19:31:58 by sbrito            #+#    #+#             */
+/*   Updated: 2023/11/09 19:35:03 by sbrito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_print_alphabet(void)
+int	main(int count, char **argv)
 {
-	char	ab;
+	int		i;
+	char	*name;
 
-	ab = 'a';
-	while (ab <= 'z')
+	i = count;
+	argv++;
+	while (*argv != NULL)
 	{
-		write(1, &ab, 1);
-		ab++;
+		name = *argv;
+		while (*name != '\0')
+		{
+			write(1, name, 1);
+			name++;
+		}
+		write(1, "\n", 1);
+		argv++;
 	}
+	return (0);
 }

@@ -6,15 +6,15 @@
 /*   By: sbrito <sbrito@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 21:06:30 by sbrito            #+#    #+#             */
-/*   Updated: 2023/11/08 21:09:27 by sbrito           ###   ########.fr       */
+/*   Updated: 2023/11/09 19:25:35 by sbrito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_swap(int *a, int *b)
+void	ft_swap(int *a, int *b)
 {
-	int	*c;
+	int	c;
 	
-	*c = *a;
+	c = *a;
 	*a = *b;
-	*b = *c;
+	*b = c;
 }

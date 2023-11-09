@@ -6,11 +6,11 @@
 /*   By: sbrito <sbrito@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 21:13:26 by sbrito            #+#    #+#             */
-/*   Updated: 2023/11/09 16:45:36 by sbrito           ###   ########.fr       */
+/*   Updated: 2023/11/09 19:25:20 by sbrito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_iterative_factorial(int nb)
+int	ft_iterative_factorial(int nb)
 {
 	int	reslut;
 	int	i;

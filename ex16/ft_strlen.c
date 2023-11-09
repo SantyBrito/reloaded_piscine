@@ -1,25 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sbrito <sbrito@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/08 19:56:00 by sbrito            #+#    #+#             */
-/*   Updated: 2023/11/09 19:21:13 by sbrito           ###   ########.fr       */
+/*   Created: 2023/11/09 19:28:25 by sbrito            #+#    #+#             */
+/*   Updated: 2023/11/09 19:28:47 by sbrito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_print_alphabet(void)
+int	ft_strlen(char *str)
 {
-	char	ab;
+	int	count;
 
-	ab = 'a';
-	while (ab <= 'z')
+	count = 0;
+	while (str[count])
 	{
-		write(1, &ab, 1);
-		ab++;
+		count = count + 1;
 	}
+	return (count);
 }

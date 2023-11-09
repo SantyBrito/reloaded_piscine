@@ -6,11 +6,11 @@
 /*   By: sbrito <sbrito@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 20:59:48 by sbrito            #+#    #+#             */
-/*   Updated: 2023/11/08 21:04:59 by sbrito           ###   ########.fr       */
+/*   Updated: 2023/11/09 19:25:44 by sbrito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_ft(int *nbr)
+void	ft_ft(int *nbr)
 {
 	*nbr = 42;
 }

@@ -6,11 +6,11 @@
 /*   By: sbrito <sbrito@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 21:10:13 by sbrito            #+#    #+#             */
-/*   Updated: 2023/11/08 21:12:52 by sbrito           ###   ########.fr       */
+/*   Updated: 2023/11/09 19:25:28 by sbrito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_div_mod(int a, int b, int *div, int *mod)
+void	ft_div_mod(int a, int b, int *div, int *mod)
 {
 	*div = a / b;
 	*mod = a % b;
