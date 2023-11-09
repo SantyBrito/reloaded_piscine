@@ -1,18 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sbrito <sbrito@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/08 19:56:00 by sbrito            #+#    #+#             */
-/*   Updated: 2023/11/09 14:35:52 by sbrito           ###   ########.fr       */
+/*   Created: 2023/11/09 16:53:08 by sbrito            #+#    #+#             */
+/*   Updated: 2023/11/09 17:04:25 by sbrito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_print_alphabet(void)
+void	ft_putchar(char *c)
 {
-	write(1, "abcdefghijklmnopqrstuvwxyz", 26);
+	int	i;
+
+	i = 0;
+	while (i < &c)
+	{
+		i++;
+	}
+	write(1, &c, i);
 }
+
+void ft_putstr(char *str);

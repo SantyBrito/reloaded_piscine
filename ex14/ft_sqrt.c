@@ -1,18 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sbrito <sbrito@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/08 19:56:00 by sbrito            #+#    #+#             */
-/*   Updated: 2023/11/09 14:35:52 by sbrito           ###   ########.fr       */
+/*   Created: 2023/11/09 16:51:28 by sbrito            #+#    #+#             */
+/*   Updated: 2023/11/09 16:51:55 by sbrito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void ft_print_alphabet(void)
+int	ft_sqrt(int nb)
 {
-	write(1, "abcdefghijklmnopqrstuvwxyz", 26);
+	int	i;
+
+	i = 1;
+	if (nb <= 0)
+		return (0);
+	else if (nb == 1)
+		return (1);
+	while (++i < nb && i <= 46340)
+	{
+		if (nb == i * i)
+			return (i);
+	}
+	return (0);
 }
